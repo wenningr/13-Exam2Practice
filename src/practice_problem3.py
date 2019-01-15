@@ -34,11 +34,11 @@ import rosegraphics as rg
 
 def main():
     """ Calls the   TEST   functions in this module. """
-    #run_test_practice_problem3a()
+    run_test_practice_problem3a()
     #run_test_practice_problem3b()
     #run_test_practice_problem3c()
     #run_test_practice_problem3d()
-    run_test_practice_problem3e()
+    #run_test_practice_problem3e()
 
 
 def is_prime(n):
@@ -173,19 +173,19 @@ def practice_problem3a(circles):
       :type sequence: [rg.Circle]
     """
     ###########################################################################
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #     The testing code is already written for you (above).
     ###########################################################################
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      7
     #    TIME ESTIMATE:   10 minutes.
     ###########################################################################
-    #total = 1
-    #for k in range(len(circles)):
-        #word = circles[k]
-        #print(word[k])
+    total = 1
+    for k in range(len(circles)):
+        circle = circles[k]
+        total = total * circle.center.x
 
-    #return total
+    return total
 
 def run_test_practice_problem3b():
     """ Tests the    practice_problem3b    function. """
